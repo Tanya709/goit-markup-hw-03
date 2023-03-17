@@ -264,7 +264,6 @@ p {
 .card-team {
   width: 264px;
   height: 380px;
-  background-color: var(--cite-white-color);
 }
 .flex-our-team {
   display: flex;
@@ -278,6 +277,7 @@ p {
 }
 .content-team {
   padding: 32px 16px;
+  background-color: var(--cite-white-color);
 }
 .photo-team {
   display: block;
@@ -339,10 +339,8 @@ p {
   margin-right: 0;
 }
 .card-content {
-  padding: 32px 54px 32px 16px;
-}
-.card-portfolio {
-  box-shadow: #2e2f42;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 .photo-portfolio {
   display: block;
