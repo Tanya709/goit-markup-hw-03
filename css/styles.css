@@ -76,13 +76,7 @@ p {
   color: var(--primary-text-color);
 }
 /*========== HEADER ==========*/
-.page-header {
-  padding-bottom: 43px;
-}
-.section-header {
-  height: 72px;
-  border-bottom: 1px solid #e7e9fc;
-}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -110,13 +104,18 @@ p {
   color: var(--second-accent-grey);
 }
 /*======== MENU =============*/
+.header-container {
+  display: flex;
+}
 .cite-nav {
   display: flex;
 }
-.cite-nav .link:not(last-child) {
+.list-item {
   margin-right: 40px;
 }
-
+.list-item:last-child {
+  margin: 0;
+}
 .menu {
   display: flex;
   align-items: center;
@@ -142,13 +141,14 @@ p {
 
   font-style: normal;
 }
-.contacts .link:not(last-child) {
-  margin-right: 40px;
-}
 .contacts-list {
   display: flex;
   align-items: center;
 }
+.contacts-item:not(last-child) {
+  margin-right: 40px;
+}
+
 .link-address {
   color: var(--primary-text-color);
 }
@@ -156,8 +156,7 @@ p {
 /*===========  HERO ========*/
 .hero {
   background-color: #2e2f42;
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding: 188px 472px;
 }
 .container-hero {
   text-align: center;
@@ -176,6 +175,10 @@ p {
 }
 /*BUTTON*/
 .modal-btn {
+  padding: 16px 32px;
+  border-radius: 4px;
+  border-color: var(--accent-color);
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -183,6 +186,7 @@ p {
   letter-spacing: 0.04em;
   cursor: pointer;
   color: var(--cite-white-color);
+  background-color: var(--accent-color);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -215,7 +219,7 @@ p {
 
 /*========== SECTION WHAT WE DOING =======*/
 .section {
-  padding-bottom: 140px;
+  padding-bottom: 120px;
 }
 .title-work-examples {
   margin-bottom: 72px;
@@ -253,7 +257,7 @@ p {
 .title-section-team {
   margin-bottom: 72px;
 
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -278,12 +282,22 @@ p {
 .content-team {
   padding: 32px 16px;
   background-color: var(--cite-white-color);
+
+  text-align: center;
 }
 .photo-team {
   display: block;
 }
 /* =========== SECTION PORTFOLIO ===========*/
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+/* кнопки */
 
+.button-container {
+  margin-bottom: 72px;
+}
 .filter-btn {
   padding: 12px 24px 12px 24px;
   border-radius: 4px;
@@ -307,10 +321,7 @@ p {
 .title-portfolio {
   font-weight: 500;
 }
-.button-container {
-  padding-top: 96px;
-  padding-bottom: 72px;
-}
+
 .list-button {
   display: flex;
   align-items: center;
@@ -322,6 +333,8 @@ p {
 .button-team:last-child {
   margin-right: 0;
 }
+/* список карточек */
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
