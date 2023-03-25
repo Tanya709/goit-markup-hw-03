@@ -76,10 +76,13 @@ p {
   color: var(--primary-text-color);
 }
 /*========== HEADER ==========*/
-
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
+  height: 80px;
 }
 
 /*=========== logo ===========*/
@@ -87,6 +90,8 @@ p {
   display: block;
   padding: 24px 0 23px;
   margin-right: 76px;
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -128,11 +133,11 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: #757575;
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: #404bbf;
+  color: #2196f3;
 }
 
 /*========== ADDRESS =========*/
@@ -156,9 +161,15 @@ p {
 /*===========  HERO ========*/
 .hero {
   background-color: #2e2f42;
-  padding: 188px 472px;
+  padding: 188px 0;
 }
 .container-hero {
+  width: 1158px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
   text-align: center;
 }
 .hero-title {
@@ -249,8 +260,8 @@ p {
 
 /*========== SECTIONS OUR TEAM ==========*/
 .section-our-team {
-  padding-top: 100px;
-  padding-bottom: 140px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   background-color: var(--second-accent-grey);
 }
@@ -289,6 +300,7 @@ p {
   display: block;
 }
 /* =========== SECTION PORTFOLIO ===========*/
+
 .section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
