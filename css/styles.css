@@ -6,12 +6,13 @@
 /*цвет секции серий #F4F4FD*/
 /*фоновый цвет первой секции #2E2F42*/
 :root {
-  --primary-text-color: #434455;
-  --title-text-color: #2e2f42;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
   --accent-color: #4d5ae5;
   --cite-white-color: #ffffff;
   --second-accent-grey: #f4f4fd;
   --text-footer: #e7e9fc;
+  --hover-color: #2196f3;
 }
 html {
   box-sizing: border-box;
@@ -82,7 +83,6 @@ p {
 .header-container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
 }
 
 /*=========== logo ===========*/
@@ -133,11 +133,11 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--title-text-color);
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 /*========== ADDRESS =========*/
@@ -307,7 +307,7 @@ p {
 }
 /* кнопки */
 
-.button-container {
+.list-button {
   margin-bottom: 72px;
 }
 .filter-btn {
