@@ -8,11 +8,10 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color: #4d5ae5;
+  --accent-color: #2196f3;
   --cite-white-color: #ffffff;
   --second-accent-grey: #f4f4fd;
   --text-footer: #e7e9fc;
-  --hover-color: #2196f3;
 }
 html {
   box-sizing: border-box;
@@ -137,7 +136,7 @@ p {
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--hover-color);
+  color: var(--accent-color);
 }
 
 /*========== ADDRESS =========*/
